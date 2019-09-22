@@ -21,11 +21,11 @@ public class Main {
         String input = null;
 
         try {
-            System.out.println("\n\n\n\n\n");
+            /*System.out.println("\n\n\n\n\n");
             System.out.println("===================================================================");
             System.out.println("===================      GOJEK PARKING LOT     ====================");
             System.out.println("===================================================================");
-            printUsage();
+            printUsage();*/
             switch (args.length) {
                 case 0: {
                     // Interactive: command-line input/output
@@ -48,7 +48,7 @@ public class Main {
                                     }
                                 }
                                 else {
-                                    printUsage();
+                                    //printUsage();
                                 }
                             }
                         }

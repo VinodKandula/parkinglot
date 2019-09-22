@@ -1,8 +1,8 @@
 package com.gojek.parkinglot.service;
 
 import com.gojek.parkinglot.constants.Constants;
-import com.gojek.parkinglot.dao.InMemoryParkingDataManagerImpl;
-import com.gojek.parkinglot.dao.ParkingDataManager;
+import com.gojek.parkinglot.dao.InMemoryParkingLotDAOImpl;
+import com.gojek.parkinglot.dao.ParkingLotDAO;
 import com.gojek.parkinglot.exception.ErrorCode;
 import com.gojek.parkinglot.exception.ParkingException;
 import com.gojek.parkinglot.model.Vehicle;
@@ -17,7 +17,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  */
 public class ParkingServiceImpl implements ParkingService {
 
-    private ParkingDataManager<Vehicle> dataManager = null;
+    private ParkingLotDAO<Vehicle> dataManager = null;
 
     private ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
 
@@ -26,8 +26,8 @@ public class ParkingServiceImpl implements ParkingService {
         if (dataManager != null)
             throw new ParkingException(ErrorCode.PARKING_ALREADY_EXIST.getMessage());
 
-        this.dataManager = InMemoryParkingDataManagerImpl.getInstance(level, capacity);
-        System.out.println("Created parking lot with " + capacity + " slots");
+        this.dataManager = InMemoryParkingLotDAOImpl.getInstance(level, capacity);
+        System.out.println("Created a parking lot with " + capacity + " slots");
     }
 
     @Override
@@ -86,7 +86,7 @@ public class ParkingServiceImpl implements ParkingService {
         validateParkingLot();
         lock.readLock().lock();
         try {
-            System.out.println("Slot No.\tRegistration No.\tColor");
+            System.out.println("Slot No.\tRegistration No \tColour");
             List<String> statusList = dataManager.getStatus(level);
             if (statusList.size() == 0)
                 System.out.println("Sorry, parking lot is empty.");
@@ -129,9 +129,9 @@ public class ParkingServiceImpl implements ParkingService {
         try {
             List<String> registrationList = dataManager.getRegNumberForColor(level, color);
             if (registrationList.size() == 0)
-                System.out.println("Not Found");
+                System.out.println("Not found");
             else
-                System.out.println(String.join(",", registrationList));
+                System.out.println(String.join(", ", registrationList));
         }
         catch (Exception e) {
             throw new ParkingException(ErrorCode.PROCESSING_ERROR.getMessage(), e);
@@ -148,8 +148,8 @@ public class ParkingServiceImpl implements ParkingService {
         try {
             List<Integer> slotList = dataManager.getSlotNumbersFromColor(level, color);
             if (slotList.size() == 0)
-                System.out.println("Not Found");
-            StringJoiner joiner = new StringJoiner(",");
+                System.out.println("Not found");
+            StringJoiner joiner = new StringJoiner(", ");
             for (Integer slot : slotList) {
                 joiner.add(slot + "");
             }
@@ -170,7 +170,7 @@ public class ParkingServiceImpl implements ParkingService {
         lock.readLock().lock();
         try {
             value = dataManager.getSlotNoFromRegistrationNo(level, registrationNo);
-            System.out.println(value != -1 ? value : "Not Found");
+            System.out.println(value != -1 ? value : "Not found");
         }
         catch (Exception e) {
             throw new ParkingException(ErrorCode.PROCESSING_ERROR.getMessage(), e);
@@ -187,7 +187,7 @@ public class ParkingServiceImpl implements ParkingService {
         int capacity;
         try {
             capacity = dataManager.getCapacity(level);
-            System.out.println(capacity > 0 ? capacity : "Not Found");
+            System.out.println(capacity > 0 ? capacity : "Not found");
         }
         catch (Exception e) {
             throw new ParkingException(ErrorCode.PROCESSING_ERROR.getMessage(), e);
@@ -198,6 +198,6 @@ public class ParkingServiceImpl implements ParkingService {
     @Override
     public void cleanup() {
         if (dataManager != null)
-            dataManager.doCleanup();
+            dataManager.cleanup();
     }
 }

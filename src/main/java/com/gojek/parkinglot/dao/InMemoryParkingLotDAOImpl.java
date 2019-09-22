@@ -11,19 +11,19 @@ import java.util.Map;
 /**
  * @author Vinod Kandula
  */
-public class InMemoryParkingDataManagerImpl<T extends Vehicle> implements ParkingDataManager<T> {
+public class InMemoryParkingLotDAOImpl<T extends Vehicle> implements ParkingLotDAO<T> {
 
-    private Map<Integer, ParkingLevelDataManager<T>> levelParkingMap;
+    private Map<Integer, ParkingLotLevelDAO<T>> levelParkingMap;
 
     @SuppressWarnings("rawtypes")
-    private static InMemoryParkingDataManagerImpl instance = null;
+    private static InMemoryParkingLotDAOImpl instance = null;
 
     @SuppressWarnings("unchecked")
-    public static <T extends Vehicle> InMemoryParkingDataManagerImpl<T> getInstance(int parkingLevels, int capacity) {
+    public static <T extends Vehicle> InMemoryParkingLotDAOImpl<T> getInstance(int parkingLevels, int capacity) {
         if (instance == null) {
-            synchronized (InMemoryParkingDataManagerImpl.class) {
+            synchronized (InMemoryParkingLotDAOImpl.class) {
                 if (instance == null) {
-                    instance = new InMemoryParkingDataManagerImpl<T>(parkingLevels, capacity);
+                    instance = new InMemoryParkingLotDAOImpl<T>(parkingLevels, capacity);
                 }
             }
         }
@@ -31,31 +31,31 @@ public class InMemoryParkingDataManagerImpl<T extends Vehicle> implements Parkin
     }
 
     @SuppressWarnings("unchecked")
-    public static <T extends Vehicle> InMemoryParkingDataManagerImpl<T> getInstance(int parkingLevels, Map<Integer, Integer> capacityMap, List<ParkingStrategy> parkingStrategies) {
+    public static <T extends Vehicle> InMemoryParkingLotDAOImpl<T> getInstance(int parkingLevels, Map<Integer, Integer> capacityMap, List<ParkingStrategy> parkingStrategies) {
         // Make sure the each of the lists are of equal size
         if (instance == null) {
-            synchronized (InMemoryParkingDataManagerImpl.class) {
+            synchronized (InMemoryParkingLotDAOImpl.class) {
                 if (instance == null) {
-                    instance = new InMemoryParkingDataManagerImpl<T>(parkingLevels, capacityMap, parkingStrategies);
+                    instance = new InMemoryParkingLotDAOImpl<T>(parkingLevels, capacityMap, parkingStrategies);
                 }
             }
         }
         return instance;
     }
 
-    private InMemoryParkingDataManagerImpl(int parkingLevels, int capacity) {
+    private InMemoryParkingLotDAOImpl(int parkingLevels, int capacity) {
         if (levelParkingMap == null)
             levelParkingMap = new HashMap<>();
         for (int i = 1; i <= parkingLevels; i++) {
-            levelParkingMap.put(i, InMemoryParkingLevelDataManagerImpl.getInstance(i, capacity, new NearestFirstParkingStrategy()));
+            levelParkingMap.put(i, InMemoryParkingLotLevelDAOImpl.getInstance(i, capacity, new NearestFirstParkingStrategy()));
         }
     }
 
-    private InMemoryParkingDataManagerImpl(int parkingLevels, Map<Integer, Integer> capacityList, List<ParkingStrategy> parkingStrategies) {
+    private InMemoryParkingLotDAOImpl(int parkingLevels, Map<Integer, Integer> capacityList, List<ParkingStrategy> parkingStrategies) {
         if (levelParkingMap == null)
             levelParkingMap = new HashMap<>();
         for (int i = 1; i <= parkingLevels; i++) {
-            levelParkingMap.put(i, InMemoryParkingLevelDataManagerImpl.getInstance(i, capacityList.get(i), new NearestFirstParkingStrategy()));
+            levelParkingMap.put(i, InMemoryParkingLotLevelDAOImpl.getInstance(i, capacityList.get(i), new NearestFirstParkingStrategy()));
         }
     }
 
@@ -100,8 +100,8 @@ public class InMemoryParkingDataManagerImpl<T extends Vehicle> implements Parkin
     }
 
     @Override
-    public void doCleanup() {
-        for (ParkingLevelDataManager<T> levelDataManager : levelParkingMap.values()) {
+    public void cleanup() {
+        for (ParkingLotLevelDAO<T> levelDataManager : levelParkingMap.values()) {
             levelDataManager.cleanUp();
         }
         levelParkingMap = null;

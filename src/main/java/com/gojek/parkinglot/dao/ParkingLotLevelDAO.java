@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @author Vinod Kandula
  */
-public interface ParkingLevelDataManager<T extends Vehicle> {
+public interface ParkingLotLevelDAO<T extends Vehicle> {
 
     public int park(T vehicle);
 

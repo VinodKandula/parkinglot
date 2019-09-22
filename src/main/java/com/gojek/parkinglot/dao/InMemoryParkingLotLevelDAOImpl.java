@@ -15,7 +15,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * @author Vinod Kandula
  */
-public class InMemoryParkingLevelDataManagerImpl<T extends Vehicle> implements ParkingLevelDataManager<T> {
+public class InMemoryParkingLotLevelDAOImpl<T extends Vehicle> implements ParkingLotLevelDAO<T> {
 
     // For Multilevel Parking lot - 0 -> Ground floor 1 -> First Floor etc
     private AtomicInteger level			    = new AtomicInteger(0);
@@ -28,22 +28,22 @@ public class InMemoryParkingLevelDataManagerImpl<T extends Vehicle> implements P
     private Map<String, Integer> vehicleSlotMap;
 
     @SuppressWarnings("rawtypes")
-    private static InMemoryParkingLevelDataManagerImpl instance = null;
+    private static InMemoryParkingLotLevelDAOImpl instance = null;
 
     @SuppressWarnings("unchecked")
-    public static <T extends Vehicle> InMemoryParkingLevelDataManagerImpl<T> getInstance(int level, int capacity,
-                                                                               ParkingStrategy parkingStrategy) {
+    public static <T extends Vehicle> InMemoryParkingLotLevelDAOImpl<T> getInstance(int level, int capacity,
+                                                                                    ParkingStrategy parkingStrategy) {
         if (instance == null) {
-            synchronized (InMemoryParkingLevelDataManagerImpl.class) {
+            synchronized (InMemoryParkingLotLevelDAOImpl.class) {
                 if (instance == null) {
-                    instance = new InMemoryParkingLevelDataManagerImpl(level, capacity, parkingStrategy);
+                    instance = new InMemoryParkingLotLevelDAOImpl(level, capacity, parkingStrategy);
                 }
             }
         }
         return instance;
     }
 
-    private InMemoryParkingLevelDataManagerImpl(int level, int capacity, ParkingStrategy parkingStrategy) {
+    private InMemoryParkingLotLevelDAOImpl(int level, int capacity, ParkingStrategy parkingStrategy) {
         this.level.set(level);
         this.capacity.set(capacity);
         this.availability.set(capacity);

@@ -150,25 +150,24 @@ public class MainTest {
 
     @Test
     public void testStatus() throws Exception {
+        PrintStream out = System.out;
         System.setOut(new PrintStream(outContent));
         parkingService = new ParkingServiceImpl();
-        thrown.expect(ParkingException.class);
-        thrown.expectMessage(is(ErrorCode.PARKING_NOT_EXIST_ERROR.getMessage()));
-        parkingService.getStatus(parkingLevel);
-
-        parkingService.createParkingLot(parkingLevel, 8);
+        parkingService.createParkingLot(parkingLevel, 6);
         parkingService.park(parkingLevel, new Car("KA-01-HH-1234", "White"));
         parkingService.park(parkingLevel, new Car("KA-01-HH-9999", "White"));
+        parkingService.park(parkingLevel, new Car("KA-01-BB-0001", "Black"));
         parkingService.getStatus(parkingLevel);
         assertTrue(
-                "Sorry,CarParkingDoesnotExist\ncreatedparkinglotwith8slots\nAllocatedslotnumber:1\nAllocatedslotnumber:2\nSlotNo.\tRegistrationNo.\tColor\n1\tKA-01-HH-1234\tWhite\n2\tKA-01-HH-9999\tWhite"
+                "createdaparkinglotwith6slots\nAllocatedslotnumber:1\nAllocatedslotnumber:2\nAllocatedslotnumber:3\nSlotNo.\tRegistrationNo\tColour\n1\t\tKA-01-HH-1234\t\tWhite\n2\t\tKA-01-HH-9999\t\tWhite\n3\t\tKA-01-BB-0001\t\tBlack"
                         .equalsIgnoreCase(outContent.toString().trim().replace(" ", "")));
 
-        System.setOut(null);
+        System.setOut(out);
     }
 
     @Test
     public void testGetSlotsByRegNo() throws Exception {
+        PrintStream out = System.out;
         System.setOut(new PrintStream(outContent));
         parkingService = new ParkingServiceImpl();
         thrown.expect(ParkingException.class);
@@ -186,11 +185,12 @@ public class MainTest {
         assertEquals("Sorry,CarParkingDoesnotExist\n" + "Createdparkinglotwith10slots\n" + "\n"
                         + "Allocatedslotnumber:1\n" + "\n" + "Allocatedslotnumber:2\n1\nNotFound",
                 outContent.toString().trim().replace(" ", ""));
-        System.setOut(null);
+        System.setOut(out);
     }
 
     @Test
     public void testGetSlotsByColor() throws Exception {
+        PrintStream out = System.out;
         System.setOut(new PrintStream(outContent));
         parkingService = new ParkingServiceImpl();
         thrown.expect(ParkingException.class);
@@ -211,6 +211,6 @@ public class MainTest {
                 "Sorry,CarParkingDoesnotExist\n" + "Createdparkinglotwith6slots\n" + "\n" + "Allocatedslotnumber:1\n"
                         + "\n" + "Allocatedslotnumber:2\n" + "KA-01-HH-1234,KA-01-HH-9999,Notfound",
                 outContent.toString().trim().replace(" ", ""));
-        System.setOut(null);
+        System.setOut(out);
     }
 }

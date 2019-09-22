@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99bd7013-fc4b-4398-9038-0c413ccf3161" name="Default Changelist" comment="" />
+    <list default="true" id="99bd7013-fc4b-4398-9038-0c413ccf3161" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/InMemoryParkingDataManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/InMemoryParkingLotDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/InMemoryParkingLevelDataManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/InMemoryParkingLotLevelDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/ParkingDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/ParkingLotDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/ParkingLevelDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/ParkingLotLevelDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/service/ParkingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/service/ParkingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gojek/parkinglot/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gojek/parkinglot/MainTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,36 +22,74 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/gojek/parkinglot/MainTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/service/ParkingServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="133" column="67" lean-forward="true" selection-start-line="133" selection-start-column="67" selection-end-line="133" selection-end-column="67" />
+            <state relative-caret-position="236">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1016#1017#0" expanded="true" />
-                <element signature="e#1048#1049#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="441">
-                <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/gojek/parkinglot/MainTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="162" column="47" lean-forward="true" selection-start-line="162" selection-start-column="47" selection-end-line="162" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1016#1017#0" expanded="true" />
+                <element signature="e#1049#1050#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="247">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/InMemoryParkingLotDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="73" column="51" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2704#2705#0" expanded="true" />
+                <element signature="e#2765#2766#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/InMemoryParkingLotLevelDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="100" column="9" lean-forward="true" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-154">
+              <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,6 +104,12 @@
         <option value="JUnit4 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>printUsage</find>
+      <find>Registration No</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -86,15 +139,19 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/constants/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/cmd/CmdRequestProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/ParkingDataManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/InMemoryParkingLevelDataManagerImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/service/ParkingServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/InMemoryParkingDataManagerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/service/ParkingService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/ParkingLevelDataManager.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/gojek/parkinglot/MainTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/ParkingDataManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/ParkingLotDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/ParkingLevelDataManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/ParkingLotLevelDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/InMemoryParkingDataManagerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/InMemoryParkingLotDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/InMemoryParkingLevelDataManagerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/service/ParkingServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/InMemoryParkingLotLevelDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/gojek/parkinglot/MainTest.java" />
       </list>
     </option>
   </component>
@@ -154,7 +211,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="parkinglot" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ParkingLot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParkingLot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="parkinglot" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ParkingLot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParkingLot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="parkinglot" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ParkingLot" type="b2602c69:ProjectViewProjectNode" />
@@ -186,7 +261,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569146939218" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569157483038" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
   </component>
@@ -218,7 +293,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest">
+  <component name="RunManager" selected="JUnit.MainTest.testStatus">
     <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ParkingLot" />
       <extension name="coverage">
@@ -306,8 +381,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.MainTest.testStatus" />
+        <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.MainTest.whenParkingAlreadyExistingVehicle_shouldMatchVehicleAlreadyExists" />
         <item itemvalue="JUnit.MainTest.whenEmptyParkingLot_shouldMatchWithSlotsAvailable" />
         <item itemvalue="JUnit.MainTest.whenCreatingAlreadyExistParkingLot_shouldThrowException" />
@@ -328,35 +403,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest - 2019.09.22 at 12h 53m 28s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest - 2019.09.22 at 14h 03m 26s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest - 2019.09.22 at 14h 05m 19s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest - 2019.09.22 at 14h 06m 26s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_testStatus - 2019.09.22 at 14h 09m 53s.xml">
+    <history-entry file="MainTest_testStatus - 2019.09.22 at 18h 22m 37s.xml">
       <configuration name="MainTest.testStatus" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2019.09.22 at 14h 10m 01s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
+    <history-entry file="MainTest_testStatus - 2019.09.22 at 18h 22m 43s.xml">
+      <configuration name="MainTest.testStatus" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2019.09.22 at 14h 12m 45s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
+    <history-entry file="MainTest_testStatus - 2019.09.22 at 18h 22m 45s.xml">
+      <configuration name="MainTest.testStatus" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2019.09.22 at 14h 15m 24s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
+    <history-entry file="MainTest_testStatus - 2019.09.22 at 18h 22m 47s.xml">
+      <configuration name="MainTest.testStatus" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2019.09.22 at 14h 17m 14s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
+    <history-entry file="MainTest_testStatus - 2019.09.22 at 18h 22m 49s.xml">
+      <configuration name="MainTest.testStatus" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2019.09.22 at 14h 17m 52s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
+    <history-entry file="MainTest_testStatus - 2019.09.22 at 18h 22m 50s.xml">
+      <configuration name="MainTest.testStatus" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testStatus - 2019.09.22 at 18h 23m 04s.xml">
+      <configuration name="MainTest.testStatus" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testStatus - 2019.09.22 at 18h 23m 43s.xml">
+      <configuration name="MainTest.testStatus" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testStatus - 2019.09.22 at 18h 25m 28s.xml">
+      <configuration name="MainTest.testStatus" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testStatus - 2019.09.22 at 18h 27m 51s.xml">
+      <configuration name="MainTest.testStatus" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -369,16 +444,16 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="simpleUML" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22405373" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24053724" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.36572623" />
+      <window_info anchor="bottom" id="Terminal" weight="0.35318705" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.3291536" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291536" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5903866" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.31870428" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.430512" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.31870428" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -419,10 +494,10 @@
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/Main.java</url>
-          <line>37</line>
+          <url>file://$PROJECT_DIR$/src/test/java/com/gojek/parkinglot/MainTest.java</url>
+          <line>160</line>
           <properties />
-          <option name="timeStamp" value="23" />
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -432,6 +507,16 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>outContent</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>outContent.toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>outContent.toString().trim().replace(&quot; &quot;, &quot;&quot;);</expression-string>
         <language-id>JAVA</language-id>
@@ -566,18 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/constants/CommandLineInputParameters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="17" column="56" lean-forward="true" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#877#878#0" expanded="true" />
-            <element signature="e#920#921#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/cmd/CmdRequestProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -588,27 +661,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="107" column="59" lean-forward="true" selection-start-line="107" selection-start-column="59" selection-end-line="107" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/cmd/CmdRequestProcessorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/constants/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -636,13 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -660,48 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/service/ParkingServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="28" column="65" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/InMemoryParkingLevelDataManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5436#5437#0" expanded="true" />
-            <element signature="e#5478#5479#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/InMemoryParkingDataManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="82" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/ParkingDataManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/service/ParkingService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
@@ -712,25 +719,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/ParkingLevelDataManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gojek/parkinglot/MainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="133" column="67" lean-forward="true" selection-start-line="133" selection-start-column="67" selection-end-line="133" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1016#1017#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="228">
+            <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -741,13 +736,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="441">
-            <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/constants/CommandLineInputParameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/ParkingLotLevelDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/ParkingLotDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154">
+          <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/constants/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/InMemoryParkingLotDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="73" column="51" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2704#2705#0" expanded="true" />
+            <element signature="e#2765#2766#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/dao/InMemoryParkingLotLevelDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="100" column="9" lean-forward="true" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/parkinglot/service/ParkingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8350">
+          <caret line="109" column="39" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gojek/parkinglot/MainTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="162" column="47" lean-forward="true" selection-start-line="162" selection-start-column="47" selection-end-line="162" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1016#1017#0" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
