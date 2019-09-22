@@ -102,7 +102,7 @@ public class InMemoryParkingDataManagerImpl<T extends Vehicle> implements Parkin
     @Override
     public void doCleanup() {
         for (ParkingLevelDataManager<T> levelDataManager : levelParkingMap.values()) {
-            levelDataManager.doCleanUp();
+            levelDataManager.cleanUp();
         }
         levelParkingMap = null;
         instance = null;

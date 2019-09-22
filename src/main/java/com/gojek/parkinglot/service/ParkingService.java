@@ -28,6 +28,6 @@ public interface ParkingService extends Service {
 
     public int getCapacity(int level) throws ParkingException;
 
-    public void doCleanup();
+    public void cleanup();
 
 }

@@ -196,7 +196,7 @@ public class ParkingServiceImpl implements ParkingService {
     }
 
     @Override
-    public void doCleanup() {
+    public void cleanup() {
         if (dataManager != null)
             dataManager.doCleanup();
     }

@@ -149,7 +149,7 @@ public class InMemoryParkingLevelDataManagerImpl<T extends Vehicle> implements P
     }
 
     @Override
-    public void doCleanUp() {
+    public void cleanUp() {
         this.level = new AtomicInteger();
         this.capacity = new AtomicInteger();
         this.availability = new AtomicInteger();

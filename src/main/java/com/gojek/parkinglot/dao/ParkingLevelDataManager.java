@@ -25,6 +25,6 @@ public interface ParkingLevelDataManager<T extends Vehicle> {
 
     public int getCapacity();
 
-    public void doCleanUp();
+    public void cleanUp();
 
 }
