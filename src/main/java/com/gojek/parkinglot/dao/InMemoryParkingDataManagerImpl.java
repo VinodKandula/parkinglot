@@ -20,7 +20,6 @@ public class InMemoryParkingDataManagerImpl<T extends Vehicle> implements Parkin
 
     @SuppressWarnings("unchecked")
     public static <T extends Vehicle> InMemoryParkingDataManagerImpl<T> getInstance(int parkingLevels, int capacity) {
-        // Make sure the each of the lists are of equal size
         if (instance == null) {
             synchronized (InMemoryParkingDataManagerImpl.class) {
                 if (instance == null) {
