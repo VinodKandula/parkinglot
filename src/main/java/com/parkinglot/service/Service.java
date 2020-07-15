@@ -1,4 +1,4 @@
-package com.gojek.parkinglot.service;
+package com.parkinglot.service;
 
 /**
  * @author Vinod Kandula

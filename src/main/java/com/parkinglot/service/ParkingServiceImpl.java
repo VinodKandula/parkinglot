@@ -1,11 +1,11 @@
-package com.gojek.parkinglot.service;
+package com.parkinglot.service;
 
-import com.gojek.parkinglot.constants.Constants;
-import com.gojek.parkinglot.dao.InMemoryParkingLotDAOImpl;
-import com.gojek.parkinglot.dao.ParkingLotDAO;
-import com.gojek.parkinglot.exception.ErrorCode;
-import com.gojek.parkinglot.exception.ParkingException;
-import com.gojek.parkinglot.model.Vehicle;
+import com.parkinglot.constants.Constants;
+import com.parkinglot.dao.InMemoryParkingLotDAOImpl;
+import com.parkinglot.dao.ParkingLotDAO;
+import com.parkinglot.exception.ErrorCode;
+import com.parkinglot.exception.ParkingException;
+import com.parkinglot.model.Vehicle;
 
 import java.util.List;
 import java.util.Optional;

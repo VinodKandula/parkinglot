@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.gojek</groupId>
+    <groupId>com.parkinglot</groupId>
     <artifactId>ParkingLot</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 
     <name>ParkingLot</name>
-    <description>GoJek ParkingLot coding challenge</description>
+    <description>ParkingLot coding challenge</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -46,7 +46,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.gojek.parkinglot.Main</mainClass>
+                            <mainClass>com.parkinglot.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

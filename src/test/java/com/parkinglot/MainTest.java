@@ -1,15 +1,13 @@
-package com.gojek.parkinglot;
+package com.parkinglot;
 
-import com.gojek.parkinglot.constants.Constants;
-import com.gojek.parkinglot.exception.ErrorCode;
-import com.gojek.parkinglot.exception.ParkingException;
-import com.gojek.parkinglot.model.Car;
-import com.gojek.parkinglot.service.ParkingService;
-import com.gojek.parkinglot.service.ParkingServiceImpl;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import com.parkinglot.constants.Constants;
+import com.parkinglot.exception.ErrorCode;
+import com.parkinglot.exception.ParkingException;
+import com.parkinglot.model.Car;
+import com.parkinglot.service.ParkingService;
+import com.parkinglot.service.ParkingServiceImpl;
+import org.hamcrest.CoreMatchers;
+import org.junit.*;
 import org.junit.rules.ExpectedException;
 
 import java.io.ByteArrayOutputStream;
@@ -57,7 +55,7 @@ public class MainTest {
         parkingService.createParkingLot(parkingLevel, 7);
         assertEquals(7, parkingService.getCapacity(parkingLevel));
         thrown.expect(ParkingException.class);
-        thrown.expectMessage(is(ErrorCode.PARKING_ALREADY_EXIST.getMessage()));
+        thrown.expectMessage(CoreMatchers.is(ErrorCode.PARKING_ALREADY_EXIST.getMessage()));
         parkingService.createParkingLot(parkingLevel, 65);
     }
 
@@ -93,7 +91,7 @@ public class MainTest {
         parkingService.park(parkingLevel, new Car("KA-01-HH-1234", "White"));
         parkingService.park(parkingLevel, new Car("KA-01-HH-9999", "White"));
         Optional<Integer> result = parkingService.park(parkingLevel, new Car("KA-01-BB-0001", "Black"));
-        assertEquals(Constants.NOT_AVAILABLE, result.get().intValue());
+        Assert.assertEquals(Constants.NOT_AVAILABLE, result.get().intValue());
     }
 
     @Test

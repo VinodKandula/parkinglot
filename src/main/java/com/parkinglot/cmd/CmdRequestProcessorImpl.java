@@ -1,11 +1,11 @@
-package com.gojek.parkinglot.cmd;
+package com.parkinglot.cmd;
 
-import com.gojek.parkinglot.constants.Constants;
-import com.gojek.parkinglot.exception.ErrorCode;
-import com.gojek.parkinglot.exception.ParkingException;
-import com.gojek.parkinglot.model.Car;
-import com.gojek.parkinglot.service.ParkingService;
-import com.gojek.parkinglot.service.Service;
+import com.parkinglot.constants.Constants;
+import com.parkinglot.exception.ErrorCode;
+import com.parkinglot.exception.ParkingException;
+import com.parkinglot.model.Car;
+import com.parkinglot.service.ParkingService;
+import com.parkinglot.service.Service;
 
 /**
  * @author Vinod Kandula

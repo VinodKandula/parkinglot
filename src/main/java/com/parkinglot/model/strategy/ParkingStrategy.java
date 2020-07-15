@@ -1,4 +1,4 @@
-package com.gojek.parkinglot.model.strategy;
+package com.parkinglot.model.strategy;
 
 /**
  * @author Vinod Kandula

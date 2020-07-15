@@ -1,8 +1,8 @@
-package com.gojek.parkinglot.cmd;
+package com.parkinglot.cmd;
 
-import com.gojek.parkinglot.constants.CommandLineInputParameters;
-import com.gojek.parkinglot.exception.ParkingException;
-import com.gojek.parkinglot.service.Service;
+import com.parkinglot.constants.CommandLineInputParameters;
+import com.parkinglot.exception.ParkingException;
+import com.parkinglot.service.Service;
 
 /**
  * @author Vinod Kandula

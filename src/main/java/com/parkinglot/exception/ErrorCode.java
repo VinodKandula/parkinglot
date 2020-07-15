@@ -1,4 +1,4 @@
-package com.gojek.parkinglot.exception;
+package com.parkinglot.exception;
 
 /**
  * @author Vinod Kandula

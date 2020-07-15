@@ -1,4 +1,4 @@
-package com.gojek.parkinglot.model;
+package com.parkinglot.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

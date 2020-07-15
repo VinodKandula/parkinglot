@@ -1,4 +1,4 @@
-package com.gojek.parkinglot.constants;
+package com.parkinglot.constants;
 
 import java.util.HashMap;
 import java.util.Map;

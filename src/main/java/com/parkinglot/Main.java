@@ -1,10 +1,10 @@
-package com.gojek.parkinglot;
+package com.parkinglot;
 
-import com.gojek.parkinglot.cmd.CmdRequestProcessor;
-import com.gojek.parkinglot.cmd.CmdRequestProcessorImpl;
-import com.gojek.parkinglot.exception.ErrorCode;
-import com.gojek.parkinglot.exception.ParkingException;
-import com.gojek.parkinglot.service.ParkingServiceImpl;
+import com.parkinglot.cmd.CmdRequestProcessor;
+import com.parkinglot.cmd.CmdRequestProcessorImpl;
+import com.parkinglot.exception.ErrorCode;
+import com.parkinglot.exception.ParkingException;
+import com.parkinglot.service.ParkingServiceImpl;
 
 import java.io.*;
 

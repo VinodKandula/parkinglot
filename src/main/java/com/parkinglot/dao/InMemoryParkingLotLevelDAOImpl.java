@@ -1,9 +1,9 @@
-package com.gojek.parkinglot.dao;
+package com.parkinglot.dao;
 
-import com.gojek.parkinglot.constants.Constants;
-import com.gojek.parkinglot.model.Vehicle;
-import com.gojek.parkinglot.model.strategy.NearestFirstParkingStrategy;
-import com.gojek.parkinglot.model.strategy.ParkingStrategy;
+import com.parkinglot.constants.Constants;
+import com.parkinglot.model.Vehicle;
+import com.parkinglot.model.strategy.NearestFirstParkingStrategy;
+import com.parkinglot.model.strategy.ParkingStrategy;
 
 import java.util.ArrayList;
 import java.util.List;
